@@ -41,26 +41,24 @@ p{
 
 }
 
-a{
-
-}
 
 table{
     border: 2px solid #000000;
-    border-collapse: collapse;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     text-align: center;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     
     
+}
+
+table * tr * {
+  text-align: center;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
 }
 
 .colhead{
@@ -75,7 +73,8 @@ table{
 }
 
 .rowhead{
-  border: 2px solid #000000;
+  border-right: 2px solid #000000;
+  border-top: 2px solid #000000;
   text-align: center;
   vertical-align: middle;
 
@@ -87,7 +86,9 @@ td{
   vertical-align: middle;
 }
 
-tr{
+table tr:hover{
+  background-color: rgba(126, 8, 32);
+  opacity: .25;
 }
 
 *{
@@ -106,7 +107,7 @@ footer{
   min-height: 75px;
   height: auto;
   position: sticky;
-  bottom: 90;
+  bottom: 0;
 }
 
 a:link{
@@ -130,27 +131,19 @@ tbody tr:nth-child(odd) {
 }
 
 
-tbody:last-child th {
-  border-bottom-left-radius: 10px;
-}
-tbody:last-child td:last-child{
-  border-bottom-right-radius: 10px;
-}
-th:first-child {
+thead tr th:first-child {
   border-top-left-radius: 10px;
 }
-th:last-child {
+thead tr th:last-child {
   border-top-right-radius: 10px;
 }
-tr:last-child td:first-child {
+tbody tr:last-child th {
   border-bottom-left-radius: 10px;
 }
-tr:last-child td:last-child {
+
+tbody tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
 
-tr:hover {
-  background-color: rgba(126, 8, 32);
-  opacity: .25;
-}
+
 
