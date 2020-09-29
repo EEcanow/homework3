@@ -17,8 +17,7 @@ body{
   background-position: center;
   background-image: url(../images/pigeon-background.JPEG);
   background-color: #DDDDDD;
-  
-
+  margin-bottom: 0ch;
 }
 
 main{
@@ -105,9 +104,12 @@ footer{
   text-align:center;
   color: #FFFFFF;
   min-height: 75px;
-  height: auto;
+  height: auto;`
   position: sticky;
-  bottom: 0;
+  bottom: 0px;
+  padding: 0px;
+  margin-left: -1.2em;
+  margin-top: -1.2em;
 }
 
 a:link{
